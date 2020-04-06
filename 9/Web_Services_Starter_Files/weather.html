@@ -187,14 +187,16 @@
         var string="";
         for(var i=0; i<5; i++){
           var key=getKey(i);
-          var fullDate= key.date;
-          var year=fullDate[0]+fullDate[1]+fullDate[2]+fullDate[3];
-          var month=fullDate[5]+ fullDate[6];
-          var day=fullDate[8]+fullDate[9];
+          // var fullDate= key.date;
+          // var year=fullDate[0]+fullDate[1]+fullDate[2]+fullDate[3];
+          // var month=fullDate[5]+ fullDate[6];
+          // var day=fullDate[8]+fullDate[9];
+          //console.log("day of week");
+        //  console.log(dayOfWeek);
           string+= '<div style="width: 20%;">';
           string+=' <div class="card">';
           string+= '<div class="card-body">';
-          string+='<h5 class="card-title">' +fullDate +'</h5> '; // date?
+          string+='<h5 class="card-title">' +dayOfWeek +'</h5> '; // date?
           string+='<p class="card-text">High: '+getFarenheitTemp(key.maxtemp) + '<br>';
           string+='Low: '+ getFarenheitTemp(key.mintemp) + '<br>';
           string+='Sunrise: ' + key.astro.sunrise+ '<br>';
